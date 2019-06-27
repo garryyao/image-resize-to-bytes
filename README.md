@@ -21,11 +21,11 @@ axios
     'https://assets.vogue.com/photos/5ce2feec0f6084cdac2394bf/master/pass/00016-BURBERRY-RESORT-2020-LONDON.jpg',
     { responseType: 'arraybuffer' }
   )
-  .then(({ image }) => {
+  .then(({ data: image }) => {
     console.log(image.byteLength); // 1.05m
     // resize to ~200kb
     resizeToBytes(image, 200000).then(smallImage => {
-      console.log(smallImage.byteLength); // 161kb
+      console.log(smallImage.byteLength); // 190kb
     });
   });
 ```
