@@ -1,6 +1,6 @@
 {
   "name": "image-resize-to-bytes",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "resize image to desired file size",
   "homepage": "",
   "author": {
@@ -8,6 +8,9 @@
     "email": "yaojun85@gmail.com",
     "url": ""
   },
+  "contributors": [
+    "Andre 'McHill' (https://github.com/andre-mchill)"
+  ],
   "files": [
     "lib/index.js"
   ],
@@ -16,17 +19,17 @@
     "resize image mb file"
   ],
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "prettier": "^1.15.2",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-config-xo": "^0.25.0",
-    "jest": "^23.5.0"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-xo": "^0.38.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^5.2.0",
+    "jest": "^27.1.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "~2.2.1"
   },
   "engines": {
-    "npm": ">= 8.0.0"
+    "node": ">= 10.16.0"
   },
   "lint-staged": {
     "*.js": [
@@ -48,7 +51,8 @@
       "node": true
     },
     "rules": {
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "prefer-const": "off"
     },
     "plugins": [
       "prettier"
@@ -65,6 +69,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sharp": "^0.22.1"
+    "sharp": "^0.28.3"
   }
 }
