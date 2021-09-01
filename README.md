@@ -1,9 +1,9 @@
 # image-resize-to-bytes [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 Down-sizing bigger images into the best dimensions that meets the specified bytes limits,
-this will try to produce a resize that has least lost in image quality, e.g. when uploading the image via APIs that has file size restriction.
+this will try to produce a resize with least loss in image quality. E.g. when uploading an image via an API that has file size restrictions.
 
-It resize images using [sharp](https://sharp.pixelplumbing.com/en/stable/) which supports for all JPEG, PNG, WebP, TIFF, GIF and SVG images.
+It resizes images using [sharp](https://sharp.pixelplumbing.com/en/stable/) which supports all JPEG, PNG, WebP, TIFF, GIF and SVG images.
 
 ## Installation
 
